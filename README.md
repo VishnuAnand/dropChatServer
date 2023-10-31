@@ -9,3 +9,7 @@ npm install
 ```
 node app.js
 ```
+### To test connection to server
+```
+node test.js
+```
