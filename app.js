@@ -10,7 +10,10 @@ io.on("connection", (socket) => {
     console.log("msg: "+data);
   });
   socket.on("file",(data)=>{
-    console.log("file: "+data);
+    console.log("filename: "+data['name']);
+    console.log("content:\n------------------------------------------");
+    console.log(""+data['data']);
+    console.log("\n------------------------------------------")
     socket.emit("file",data);
   });
 });
